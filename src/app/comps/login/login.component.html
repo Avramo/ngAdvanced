@@ -1,0 +1,16 @@
+
+<div class='loginbox'>
+    <div class="labelinput">
+        <label for="usrname"> <b>Username:</b></label>
+        <input type="text" id="usrname" placeholder="username is a" autofocus [(ngModel)]='inputUsername'>
+    </div>
+    <div class="labelinput">
+        <label for="pswrd"><b>Password: </b></label>
+        <input type="password" id="pswrd" placeholder="password is 1" [(ngModel)]='inputPassword'><br>
+    </div>
+    <button (click)='login()'>Login</button>
+</div>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+    </style>
