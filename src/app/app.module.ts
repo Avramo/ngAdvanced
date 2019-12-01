@@ -1,15 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { IceCreamComponent } from './comps/ice-cream/ice-cream.component';
 import { ChocolateComponent } from './comps/chocolate/chocolate.component';
 import { DataTitleComponent } from './comps/data-title/data-title.component';
 import { JsonAppUserComponent } from './comps/json-app-user/json-app-user.component';
-import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './comps/login/login.component';
-import { FormsModule } from '@angular/forms';
+import { BreslevComponent } from './comps/chassidim/breslev/breslev.component';
+import { StolinComponent } from './comps/chassidim/stolin/stolin.component';
+import { SlonimComponent } from './comps/chassidim/slonim/slonim.component';
+import { AmshinovComponent } from './comps/chassidim/amshinov/amshinov.component';
+import { ChassidimMenuComponent } from './comps/chassidim/chassidim-menu/chassidim-menu.component';
+import { CalcAgePipePipe } from './comps/calc-age-pipe.pipe';
+import { PipeExampleComponent } from './comps/pipe-example/pipe-example.component';
+import { HighlightDirective } from './comps/highlight.directive';
+import { ReactiveFormsComponent } from './comps/reactive-forms/reactive-forms.component';
+import { ContactUsFormComponent } from './comps/contact-us-form/contact-us-form.component';
+import { ContactUsTableComponent } from './comps/contact-us-table/contact-us-table.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +30,25 @@ import { FormsModule } from '@angular/forms';
     ChocolateComponent,
     DataTitleComponent,
     JsonAppUserComponent,
-    LoginComponent
+    LoginComponent,
+    BreslevComponent,
+    StolinComponent,
+    SlonimComponent,
+    AmshinovComponent,
+    ChassidimMenuComponent,
+    CalcAgePipePipe,
+    PipeExampleComponent,
+    HighlightDirective,
+    ReactiveFormsComponent,
+    ContactUsFormComponent,
+    ContactUsTableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

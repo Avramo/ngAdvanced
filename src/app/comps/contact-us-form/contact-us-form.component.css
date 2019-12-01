@@ -1,0 +1,23 @@
+.addressBox{
+    border: solid goldenrod 3px;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: left;
+    text-align: left;
+}
+h2{
+    padding: 0;
+    margin: 5px 0;
+}
+label{
+    margin: 1px;
+}
+form{
+    border: solid goldenrod 3px;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: left;
+    text-align: left;
+}

@@ -1,0 +1,6 @@
+form{
+    border: solid green 3px;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 5px;
+}

@@ -1,0 +1,35 @@
+<p>contact-us-form works!</p>
+
+
+<form [formGroup]="contactUsForm" 
+    (ngSubmit)="contactUsForm_onSubmit()">
+
+    <label>subject: </label><input formControlName="subject"><br>
+    <label>content: </label><input formControlName="content"><br>
+    <label>name: </label><input formControlName="name"><br>
+    <label>email: </label><input formControlName="email"><br>
+    <label>phone: </label><input formControlName="phone"><br>
+    <span class="addressBox" formGroupName="address">
+        <label> <h2>address: </h2> </label>
+        <label> houseNumber:<input formControlName="houseNumber"></label><br>
+        <label> street:<input formControlName="street"></label><br>
+        <label> city:<input formControlName="city"></label><br>
+        <label> country:<input formControlName="country"></label><br>
+        <label> zip:<input formControlName="zip"></label><br>
+    </span><br>
+    <label>credit: </label><input formControlName="credit"><br>
+    <label>gender: </label><input formControlName="gender"><br>
+    <label>hasidut: </label><input formControlName="hasidut"><br>
+    
+    <label>age: </label>
+    <input type="number" formControlName="age"><br>
+    
+    <label>whatsapp: </label>
+    <input type="checkbox" formControlName="whatsapp"><br>
+
+    <button>submit</button>
+</form>
+<br>
+<div><h4>{{message}}</h4></div>
+
+<app-contact-us-table></app-contact-us-table>

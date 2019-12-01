@@ -1,0 +1,42 @@
+<p>reactive-forms works!</p>
+
+<form>
+    <h3>reactive-forms using new FormControl</h3>
+   <div>
+        name:  <input [formControl]='name'> 
+    </div>
+    <div>
+        phone:<input [formControl]='phone'>
+    </div> 
+    <button type="button" (click)='addLead()'>submit please</button>
+</form>
+
+<br>
+<br>
+
+<table id="myTable" border="1">
+    <tr>
+        <th>name</th>
+        <th>phone</th>
+    </tr>   
+     <tr *ngFor="let l of newLeads">
+        <th>{{ l.name }}</th>
+        <th>{{ l.phone }}</th>
+    </tr>
+</table>
+
+
+<hr>
+<hr>
+
+<div id="sheeeep">
+    <h3>setValue( ) in FormControl</h3>
+    <div>
+        name of sheep:  <input [formControl]='sheep'> 
+    </div>
+    <br>
+    <button type="button" (click)='setDefaultSheepName()'>
+        set default sheep zman
+    </button>
+   <span>name of sheep: {{ sheep.value }}</span> 
+</div>

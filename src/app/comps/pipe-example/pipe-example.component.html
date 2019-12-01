@@ -1,0 +1,16 @@
+<p>pipe-example works!</p>
+
+<table border="1">
+    <tr>
+        <th>name</th>
+        <th>year of birth</th>
+        <th>age by function</th>
+        <th>age by pipe</th>
+    </tr>
+    <tr *ngFor='let p of people'>
+        <td appHighlight='yellow'>{{ p.name }}</td>
+        <td appHighlight='violet'>{{ p.birthYear }}</td>
+        <td appHighlight='green'>{{ fnAgeByFn(p.birthYear) }}</td>
+        <td appHighlight>{{ p.birthYear | calcAgePipe }}</td>
+    </tr>
+</table>
