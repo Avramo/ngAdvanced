@@ -1,0 +1,11 @@
+<p>practice-pipes works!</p>
+
+<div class="calc-add">
+    <h3>multiply pipe</h3>
+    <label>number: </label> 
+    <input type="text" [(ngModel)]='numb'><br>
+    <label>multiply by: </label> 
+    <input type="text" [(ngModel)]='mult'><br>
+    <label>result: </label> 
+    <span>{{ numb | multiply : mult }} </span> 
+</div>

@@ -14,6 +14,7 @@ import { ChassidimMenuComponent } from './comps/chassidim/chassidim-menu/chassid
 import { PipeExampleComponent } from './comps/pipe-example/pipe-example.component';
 import { ReactiveFormsComponent } from './comps/reactive-forms/reactive-forms.component';
 import { ContactUsFormComponent } from './comps/contact-us-form/contact-us-form.component';
+import { PracticePipesComponent } from './comps/practice-pipes/practice-pipes.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -41,6 +42,7 @@ const routes: Routes = [
   { path: 'pipe-example', component: PipeExampleComponent },
   { path: 'reactive-forms', component: ReactiveFormsComponent },
   { path: 'contact-us-form', component: ContactUsFormComponent },
+  { path: 'practice-pipes', component: PracticePipesComponent },
     
 
   { path: '', redirectTo: '/login', pathMatch:'full'},

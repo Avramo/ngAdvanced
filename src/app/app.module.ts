@@ -16,12 +16,14 @@ import { StolinComponent } from './comps/chassidim/stolin/stolin.component';
 import { SlonimComponent } from './comps/chassidim/slonim/slonim.component';
 import { AmshinovComponent } from './comps/chassidim/amshinov/amshinov.component';
 import { ChassidimMenuComponent } from './comps/chassidim/chassidim-menu/chassidim-menu.component';
-import { CalcAgePipePipe } from './comps/calc-age-pipe.pipe';
+import { CalcAgePipePipe } from './pipes/calc-age-pipe.pipe';
 import { PipeExampleComponent } from './comps/pipe-example/pipe-example.component';
 import { HighlightDirective } from './comps/highlight.directive';
 import { ReactiveFormsComponent } from './comps/reactive-forms/reactive-forms.component';
 import { ContactUsFormComponent } from './comps/contact-us-form/contact-us-form.component';
 import { ContactUsTableComponent } from './comps/contact-us-table/contact-us-table.component';
+import { MultiplyPipe } from './pipes/multiply.pipe';
+import { PracticePipesComponent } from './comps/practice-pipes/practice-pipes.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { ContactUsTableComponent } from './comps/contact-us-table/contact-us-tab
     HighlightDirective,
     ReactiveFormsComponent,
     ContactUsFormComponent,
-    ContactUsTableComponent
+    ContactUsTableComponent,
+    MultiplyPipe,
+    PracticePipesComponent,
   ],
   imports: [
     BrowserModule,
