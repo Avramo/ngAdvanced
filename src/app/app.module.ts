@@ -24,6 +24,11 @@ import { ContactUsFormComponent } from './comps/contact-us-form/contact-us-form.
 import { ContactUsTableComponent } from './comps/contact-us-table/contact-us-table.component';
 import { MultiplyPipe } from './pipes/multiply.pipe';
 import { PracticePipesComponent } from './comps/practice-pipes/practice-pipes.component';
+import { CapitalPipe } from './pipes/capital.pipe';
+import { ToIsraeliDatePipe } from './pipes/to-israeli-date.pipe';
+import {MatModule} from './module/material-module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -46,6 +51,9 @@ import { PracticePipesComponent } from './comps/practice-pipes/practice-pipes.co
     ContactUsTableComponent,
     MultiplyPipe,
     PracticePipesComponent,
+    CapitalPipe,
+    ToIsraeliDatePipe,
+
   ],
   imports: [
     BrowserModule,
@@ -53,6 +61,9 @@ import { PracticePipesComponent } from './comps/practice-pipes/practice-pipes.co
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    MatModule,
+    BrowserAnimationsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

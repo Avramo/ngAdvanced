@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
+
 
 @Component({
   selector: 'app-practice-pipes',
@@ -14,5 +15,9 @@ export class PracticePipesComponent implements OnInit {
 
   numb:number = 5;
   mult:number = 1;
+  lwrTxt:string = "try me";
+  now:Date = new Date();
+  usDate:Date = this.now;
+
 
 }

@@ -1,6 +1,6 @@
 <p>practice-pipes works!</p>
 
-<div class="calc-add">
+<div class="pipe-box">
     <h3>multiply pipe</h3>
     <label>number: </label> 
     <input type="text" [(ngModel)]='numb'><br>
@@ -9,3 +9,21 @@
     <label>result: </label> 
     <span>{{ numb | multiply : mult }} </span> 
 </div>
+
+<div class="pipe-box">
+        <h3> CapitalPipe</h3>
+        <label>enter lowercase text: </label> 
+        <input type="text" [(ngModel)]='lwrTxt'><br>
+        <label>CapitalPipe result: </label> 
+        <span>{{ lwrTxt | capital }} </span> 
+</div>
+
+<div class="pipe-box">
+    <h3> toIsraeliDate pipe</h3>
+  
+    <input [(ngModel)]='usDate'>
+    <br>
+    <label>toIsraeliDate result: </label> <br>
+    <span>{{ usDate| toIsraeliDate }}</span>
+</div>
+
