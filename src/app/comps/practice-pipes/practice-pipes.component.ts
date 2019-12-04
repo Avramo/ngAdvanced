@@ -12,7 +12,7 @@ export class PracticePipesComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  firstUpper:string = 'hello';
   numb:number = 5;
   mult:number = 1;
   lwrTxt:string = "try me";
@@ -20,6 +20,9 @@ export class PracticePipesComponent implements OnInit {
   usDate:Date = this.now;
   smallText:string = 'try me';
   bigText:string = 'TRY ME';
+  name:string = 'there';
+  number:number = 0 ;
+  minusNum:number = 1 ;
   _15NamesArr:string[] = [
     'Abish',' Berish',' Chatzkel',' Berel',' Gimpel',' Zusha',' Zanvil',' Zelig',' Zorach',
     ' Getzel',' Yukel',' Yankel',' Yekel',' Shmerel',' Laibel',
