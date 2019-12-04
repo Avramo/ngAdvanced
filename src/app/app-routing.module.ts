@@ -15,6 +15,7 @@ import { PipeExampleComponent } from './comps/pipe-example/pipe-example.componen
 import { ReactiveFormsComponent } from './comps/reactive-forms/reactive-forms.component';
 import { ContactUsFormComponent } from './comps/contact-us-form/contact-us-form.component';
 import { PracticePipesComponent } from './comps/practice-pipes/practice-pipes.component';
+import { PracticeDirectivesComponent } from './comps/practice-directives/practice-directives.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -43,6 +44,7 @@ const routes: Routes = [
   { path: 'reactive-forms', component: ReactiveFormsComponent },
   { path: 'contact-us-form', component: ContactUsFormComponent },
   { path: 'practice-pipes', component: PracticePipesComponent },
+  { path: 'practice-directives', component: PracticeDirectivesComponent },
     
 
   { path: '', redirectTo: '/login', pathMatch:'full'},

@@ -20,10 +20,100 @@
 
 <div class="pipe-box">
     <h3> toIsraeliDate pipe</h3>
-  
     <input [(ngModel)]='usDate'>
     <br>
     <label>toIsraeliDate result: </label> <br>
     <span>{{ usDate| toIsraeliDate }}</span>
 </div>
 
+<div class="pipe-box">
+    <h3> allCapital pipe</h3>
+    <label>enter lowercase text: </label> 
+    <input [(ngModel)]='smallText'>
+    <br>
+    <label>allCapital result: </label>
+    <span>{{ smallText | allCapital }}</span>
+</div>
+
+<div class="pipe-box">
+    <h3> unCapital pipe</h3>
+    <label>enter  first letter uppercase : </label> 
+    <input [(ngModel)]='firstUpper' >
+    <br>
+    <label>allCapital result: </label> 
+    <span>{{ firstUpper | unCapital }}</span>
+</div>
+
+<div class="pipe-box">
+    <h3> unCapitalAll pipe</h3>
+    <label>enter uppercase text: </label> 
+    <input [(ngModel)]='bigText' >
+    <br>
+    <label>allCapital result: </label> 
+    <span>{{ bigText | unCapitalAll }}</span>
+</div>
+
+<div class="pipe-box">
+    <h3> sayHello pipe</h3>
+    <label>enter your name text: </label> 
+    <input [(ngModel)]='name'>
+    <br>
+    <label>sayHello result: </label> 
+    <span>{{ name | sayHello }}</span>
+</div>
+
+<div class="pipe-box">
+    <h3> increase pipe</h3>
+    <label>enter number: </label> 
+    <input [(ngModel)]='number' >
+    <br>
+    <label>increase result: </label> 
+    <span>{{ number | increase }}</span>
+</div>
+
+<div class="pipe-box">
+    <h3> decrease pipe</h3>
+    <label>enter number: </label> 
+    <input [(ngModel)]='minusNum'>
+    <br>
+    <label>decrease result: </label> 
+    <span>{{ minusNum | decrease }}</span>
+</div>
+
+<div class="pipe-box">
+    <h3> topTenArray pipe</h3>
+    <h4>15 names array: </h4> 
+    <div>{{ _15NamesArr }}</div>
+    <br>
+    <h4>topTenArray result: </h4> 
+    <span>{{ _15NamesArr | topTenArray }}</span>
+</div>
+
+<div class="pipe-box">
+    <h3> filter pipe</h3>
+    <h4>15 names array: </h4> 
+    <div>{{ _15NamesArr }}</div>
+    <br>
+    <label for="">search for term: </label>
+    <input [(ngModel)]='searchTerm'>
+    <h4>filter result: </h4> 
+    <span>{{ _15NamesArr | filter : searchTerm }}</span>
+</div>
+
+<div class="pipe-box">
+    <h3> maxVal pipe</h3>
+    <h4>10 numbers array: </h4> 
+    <div>{{ _10numbersArr }}</div>
+    <br>
+    <h4>maxVal result: </h4> 
+    <span>{{ _10numbersArr | maxVal }}</span>
+</div>
+
+<div class="pipe-box">
+    <h3> minVal pipe</h3>
+    <h4>10 numbers array: </h4> 
+    <div>{{ _10numbersArr }}</div>
+    <br>
+    <h4>maxVal result: </h4> 
+    <span>{{ _10numbersArr | minVal }}</span>
+</div>

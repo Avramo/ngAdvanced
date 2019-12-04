@@ -18,7 +18,7 @@ import { AmshinovComponent } from './comps/chassidim/amshinov/amshinov.component
 import { ChassidimMenuComponent } from './comps/chassidim/chassidim-menu/chassidim-menu.component';
 import { CalcAgePipePipe } from './pipes/calc-age-pipe.pipe';
 import { PipeExampleComponent } from './comps/pipe-example/pipe-example.component';
-import { HighlightDirective } from './comps/highlight.directive';
+import { HighlightDirective } from './dirs/highlight.directive';
 import { ReactiveFormsComponent } from './comps/reactive-forms/reactive-forms.component';
 import { ContactUsFormComponent } from './comps/contact-us-form/contact-us-form.component';
 import { ContactUsTableComponent } from './comps/contact-us-table/contact-us-table.component';
@@ -26,8 +26,20 @@ import { MultiplyPipe } from './pipes/multiply.pipe';
 import { PracticePipesComponent } from './comps/practice-pipes/practice-pipes.component';
 import { CapitalPipe } from './pipes/capital.pipe';
 import { ToIsraeliDatePipe } from './pipes/to-israeli-date.pipe';
-import {MatModule} from './module/material-module';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MatModule } from './module/material-module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AllCapitalPipe } from './pipes/all-capital.pipe';
+import { UnCapitalPipe } from './pipes/un-capital.pipe';
+import { SayHelloPipe } from './pipes/say-hello.pipe';
+import { UnCapitalAllPipe } from './pipes/un-capital-all.pipe';
+import { IncreasePipe } from './pipes/increase.pipe';
+import { DecreasePipe } from './pipes/decrease.pipe';
+import { TopTenArrayPipe } from './pipes/top-ten-array.pipe';
+import { FilterPipe } from './pipes/filter.pipe';
+import { MaxValPipe } from './pipes/max-val.pipe';
+import { MinValPipe } from './pipes/min-val.pipe';
+import { InvisibleDirective } from './dirs/invisible.directive';
+import { PracticeDirectivesComponent } from './comps/practice-directives/practice-directives.component';
 
 
 @NgModule({
@@ -53,6 +65,18 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     PracticePipesComponent,
     CapitalPipe,
     ToIsraeliDatePipe,
+    AllCapitalPipe,
+    UnCapitalPipe,
+    SayHelloPipe,
+    UnCapitalAllPipe,
+    IncreasePipe,
+    DecreasePipe,
+    TopTenArrayPipe,
+    FilterPipe,
+    MaxValPipe,
+    MinValPipe,
+    InvisibleDirective,
+    PracticeDirectivesComponent,
 
   ],
   imports: [

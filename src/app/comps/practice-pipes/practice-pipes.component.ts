@@ -18,6 +18,13 @@ export class PracticePipesComponent implements OnInit {
   lwrTxt:string = "try me";
   now:Date = new Date();
   usDate:Date = this.now;
-
+  smallText:string = 'try me';
+  bigText:string = 'TRY ME';
+  _15NamesArr:string[] = [
+    'Abish',' Berish',' Chatzkel',' Berel',' Gimpel',' Zusha',' Zanvil',' Zelig',' Zorach',
+    ' Getzel',' Yukel',' Yankel',' Yekel',' Shmerel',' Laibel',
+  ];
+  searchTerm:string = 'search here';
+  _10numbersArr:number[] = [2, 3, 55, 84, 66, 123, 46, 85, 22, 33]
 
 }
