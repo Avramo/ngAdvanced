@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 import { AppComponent } from './app.component';
 import { IceCreamComponent } from './comps/ice-cream/ice-cream.component';
@@ -40,6 +41,12 @@ import { MaxValPipe } from './pipes/max-val.pipe';
 import { MinValPipe } from './pipes/min-val.pipe';
 import { InvisibleDirective } from './dirs/invisible.directive';
 import { PracticeDirectivesComponent } from './comps/practice-directives/practice-directives.component';
+import { EnlargerDirective } from './dirs/enlarger.directive';
+import { CloudyDirective } from './dirs/cloudy.directive';
+import { LoggerDirective } from './dirs/logger.directive';
+import { LoggerValueDirective } from './dirs/logger-value.directive';
+import { OnblurDirective } from './dirs/onblur.directive';
+import { SelectViaSVCDirective } from './dirs/select-via-svc.directive';
 
 
 @NgModule({
@@ -77,7 +84,12 @@ import { PracticeDirectivesComponent } from './comps/practice-directives/practic
     MinValPipe,
     InvisibleDirective,
     PracticeDirectivesComponent,
-
+    EnlargerDirective,
+    CloudyDirective,
+    LoggerDirective,
+    LoggerValueDirective,
+    OnblurDirective,
+    SelectViaSVCDirective,
   ],
   imports: [
     BrowserModule,
@@ -87,6 +99,7 @@ import { PracticeDirectivesComponent } from './comps/practice-directives/practic
     ReactiveFormsModule,
     MatModule,
     BrowserAnimationsModule,
+    NgSelectModule,
     
   ],
   providers: [],

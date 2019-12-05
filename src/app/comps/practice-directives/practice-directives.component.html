@@ -1,6 +1,43 @@
 <p>practice-directives works!</p>
+<section>
+    <div class="dir-box" appInvisible> 
+        <span>appInvisible hidden on hover</span>
+    </div>
+    <br>
+    <br>
 
-<div class="invisibleHover" appInvisible> 
-    <span>appInvisible hidden on hover</span>
-</div>
-<br><br>
+    <div class="dir-box" appEnlarger> 
+        <span>appEnlarger enlarge txt on click</span>
+    </div>
+    <br>
+    <div class="dir-box" appCloudy > 
+        <div >appCloudy shadow and opacity on hover</div>
+    </div>
+    <br>
+    <div class="dir-box" appLogger > 
+        <div >appLogger logs element on click</div>
+    </div>
+    <br>
+    <div class="dir-box"> 
+        <span >loggerValue logs value on inputevent</span>
+        <label>enter and click to log value:</label>
+        <input appLoggerValue type="text">
+    </div>
+    <br>
+    <div class="dir-box"> 
+        <span >on blur : alert</span><br>
+        <label>click in and out</label>
+        <input appOnblur type="text">
+    </div>
+    <br>
+    <div class="dir-box" appSelectViaSVC> 
+        <span >on select update value in srvc</span><br>
+        <select >
+            <option value="Bike">Bike</option>
+            <option value="Car">Car</option>
+            <option value="Plane">Plane</option>
+        </select>
+        <span> you selected: </span>
+        <span></span>
+    </div>
+</section>

@@ -1,5 +1,9 @@
-.invisibleHover{
-    margin: 15;
-    padding: 0;
+section{
+    display: inline-flex;
+    flex-direction: column;
+}
+.dir-box{
+    margin: 5px;
+    padding: 5px;
     border: darkmagenta solid 3px;
 }
