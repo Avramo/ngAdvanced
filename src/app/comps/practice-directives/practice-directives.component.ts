@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { SelectvalueService } from 'src/app/services/selectvalue.service';
 
 @Component({
   selector: 'app-practice-directives',
@@ -7,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PracticeDirectivesComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(public selectValSVC:SelectvalueService) { }
+@Input() myInput:string; 
   ngOnInit() {
   }
 

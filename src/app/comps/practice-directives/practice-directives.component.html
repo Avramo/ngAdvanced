@@ -19,7 +19,7 @@
     </div>
     <br>
     <div class="dir-box"> 
-        <span >loggerValue logs value on inputevent</span>
+        <span >loggerValue logs value on inputevent</span><br>
         <label>enter and click to log value:</label>
         <input appLoggerValue type="text">
     </div>
@@ -37,7 +37,28 @@
             <option value="Car">Car</option>
             <option value="Plane">Plane</option>
         </select>
+        <br>
         <span> you selected: </span>
+        <span>via 'comp > svc': <b> {{ selectValSVC.selectedInSelectValueSVC }} </b></span><br>
+        <span>via directive: </span>
         <span></span>
     </div>
+    <br>
+    <div class="dir-box"> 
+        <span >AfterContentChecked log something</span><br>
+        <label> enter text look in log </label>
+        <input [(ngModel)]='myInput'>
+        <div appLogaftercontcheck>
+            <b>my input: {{ myInput }} </b>
+        </div>
+    </div>
+    <br><br>
+    <div class="dir-box"> 
+        <span ><h4>rxjs</h4></span><br>
+        <label> search name: </label>
+        <input type="text">
+    </div>
+
+
+
 </section>

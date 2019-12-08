@@ -6,26 +6,30 @@ import { SelectvalueService } from '../services/selectvalue.service';
 })
 export class SelectViaSVCDirective implements AfterContentChecked{
   ngAfterContentChecked(): void {
-    throw new Error("Method not implemented.");
+    console.log('SelectViaSVCDirective  ngAfterContentChecked');
   }
 
-  private el:HTMLElement;
-  select:HTMLElement;
-
-  constructor(public selectValSVC:SelectvalueService, el:ElementRef) {
-    this.el = el.nativeElement;
-    this.select = this.el.querySelector('select');
-  }
-
-  @HostListener('change') selectChanged(){
-    console.log('SelectViaSVCDirective select changed!!!', this.select);
-    
-    
-    // this.selectValSVC.selectedInSelectValueSVC = select.value;
-    // this.el.querySelectorAll('span')[2].innerHTML = select.value;
-    // console.log('selected value= ', select.value);
-    
-
-  }
+  private elmnt:HTMLElement;
+  private selectEL:HTMLSelectElement;
   
+  constructor(public selectValSVC:SelectvalueService, el:ElementRef) {
+    this.elmnt = el.nativeElement;
+    
+
+  }
+
+  @HostListener('change', ['$event']) selectChanged(event){
+      console.log('SelectViaSVCDirective select changed!!!', event);
+      /// set value thru comp thru svc //////
+      let select:string = event.srcElement.value;
+      this.selectValSVC.selectedInSelectValueSVC = select;
+
+      ///// get and set value through directive NOT using SVC at ALL ////
+      this.selectEL = this.elmnt.querySelector('select');
+      this.elmnt.querySelectorAll('span')[4].innerHTML = this.selectEL.value.bold();
+      console.log('SelectViaSVCDirective selected value= ', this.selectEL.value);
+      
+
+    }
 }
+ 

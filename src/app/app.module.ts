@@ -47,6 +47,8 @@ import { LoggerDirective } from './dirs/logger.directive';
 import { LoggerValueDirective } from './dirs/logger-value.directive';
 import { OnblurDirective } from './dirs/onblur.directive';
 import { SelectViaSVCDirective } from './dirs/select-via-svc.directive';
+import { LogaftercontcheckDirective } from './dirs/logaftercontcheck.directive';
+import { UPipe } from './pipes/u.pipe';
 
 
 @NgModule({
@@ -90,6 +92,8 @@ import { SelectViaSVCDirective } from './dirs/select-via-svc.directive';
     LoggerValueDirective,
     OnblurDirective,
     SelectViaSVCDirective,
+    LogaftercontcheckDirective,
+    UPipe,
   ],
   imports: [
     BrowserModule,
